@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #b4a7a7;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav li {
+    margin-right: 1rem;
+  }
+  
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    background-color: #f5f5f5;
+    padding: 2rem;
+  }
+  
+  main h2 {
+    margin-top: 0;
+  }
+  
+  main .audio-selection {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  main .audio-selection input[type="file"] {
+    margin-right: 1rem;
+  }
+  
+  main .carrier-frequency {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  main .carrier-frequency label {
+    margin-right: 1rem;
+  }
+  
+  main .carrier-frequency input[type="range"] {
+    margin-right: 1rem;
+  }
+  
+  main .carrier-frequency span {
+    margin-left: 1rem;
+  }
+  
+  main button {
+    background-color: #333;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  main button:hover {
+    background-color: #444;
+  }
+  
+  main #progress-bar-container {
+    display: none;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  footer ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer ul li {
+    margin-right: 1rem;
+  }
+  
+  footer ul a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer ul a:hover {
+    text-decoration: underline;
+  }
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container{
+    min-height: 72vh;
+    background-color: rgb(32, 26, 26);
+    color: white;
+   font-family: 'Varela Round', sans-serif;
+   display: flex;
+   margin: 23px auto;
+   width: 70%;
+   border-radius: 12px;
+   padding: 34px;
+   background-image: url('bg.jpg');
+}
+
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.icons{
+    margin-top: 14px; 
+}
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar#myProgressBar {
+    width: 80%; /* Use percentage units for better responsiveness */
+    cursor: pointer; /* Changed to pointer to indicate that the bar is interactive */
+    user-select: none; /* Prevent text selection on the progress bar */
+    background-color: #f3f3f3; /* Light gray background color */
+    overflow: hidden; /* Hide any overflow of the progress bar */
+    position: relative; /* Position the progress bar relative to its parent element */
+    height: 20px; /* Set the height of the progress bar */
+    border-radius: 10px; /* Round the corners of the progress bar */
+  }
+  
+  #myProgressBar div {
+    height: 100%; /* Fill the entire height of the progress bar */
+    background-color: #4CAF50; /* Green progress color */
+    width: 0; /* Start with no progress */
+    transition: width 0.5s ease-in-out; /* Add a smooth transition effect */
+  }
+  #progress-bar-container {
+    display: none;
+  }
+  
+  #progress-bar {
+    width: 0;
+    height: 20px;
+    background-color: blue;
+  }
+  
+  #progress-text {
+    margin-top: 5px;
+    font-size: 14px;
+    color: blue;
+  }

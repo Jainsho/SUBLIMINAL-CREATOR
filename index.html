@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subliminal Audio Creator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="SUBLIMINAL"> SUBLIMINAL CREATOR</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+  <header>
+    <div class="container">
+      <h2>Select Your Affirmation Audio</h2>
+      <div class="audio-selection">
+        <input type="file" id="affirmation-audio-input" accept="audio/*">
+      </div>
+      <div class="carrier-frequency">
+        <label for="carrier-frequency-input">Carrier Frequency:</label>
+        <input type="range" id="carrier-frequency-input" min="1000" max="20000" step="1" value="17500">
+        <span id="carrier-frequency-text">17500 Hz</span>
+      </div>
+      <button id="create-subliminal-button">Create Subliminal</button>
+      <div id="progress-bar-container">
+        <div id="progress-bar"></div>
+        <div id="progress-text"></div>
+    </div>
+  </header>
+  <main>
+  </main>
+  <script src="script.js"></script>
+  <button id="create-subliminal-button">Create Subliminal</button>
+<div id="progress-bar-container">
+  <div id="progress-bar"></div>
+  <div id="progress-text"></div>
+</div>
+</body>
+</html>
